@@ -1,0 +1,23 @@
+name: Build and upload image
+
+on:
+  push:
+    branches: [ master ]
+
+env:
+  DOCKER_USER: ${{secrets.DOCKER_HUB_USER}}
+  DOCKER_PASSWORD: ${{secrets.DOCKER_HUB_PASSWORD}}
+  DOCKER_HUB_REPO: ${{secrets.DOCKER_HUB_USER}}/sqlserver
+  TIMESTAMP: $(date +%s)
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: docker login
+      run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+    - name: Build the Docker image
+      run: docker build --tag ${{DOCKER_HUB_REPO}}:${{TIMESTAMP}} .
+    - name: Docker Push
+      run: docker push ${{DOCKER_HUB_REPO}}:${{TIMESTAMP}}
