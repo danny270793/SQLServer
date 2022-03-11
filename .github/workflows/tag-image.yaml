@@ -1,8 +1,9 @@
-name: Build and upload image
+name: Tag image
 
 on:
   push:
-    branches: [ master ]
+    tags:
+     - v*
 
 env:
   DOCKER_USER: ${{secrets.DOCKER_HUB_USER}}
@@ -17,6 +18,6 @@ jobs:
       - name: Login on docker hub
         run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       - name: Build the docker image
-        run: docker build --tag $DOCKER_HUB_REPO:$GITHUB_SHA .
+        run: docker build --tag $DOCKER_HUB_REPO:$GITHUB_REF_NAME .
       - name: Push to docker hub
-        run: docker push $DOCKER_HUB_REPO:$GITHUB_SHA
+        run: docker push $DOCKER_HUB_REPO:$GITHUB_REF_NAME
