@@ -2,7 +2,7 @@ name: Build and upload image
 
 on:
   push:
-    branches: [ master ]
+    branches: [ never ]
 
 env:
   DOCKER_USER: ${{secrets.DOCKER_HUB_USER}}
