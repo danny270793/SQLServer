@@ -3,7 +3,8 @@ name: Tag image
 on:
   push:
     tags:
-     - v*
+      #execute on any tag
+      - '*'
 
 env:
   DOCKER_USER: ${{secrets.DOCKER_HUB_USER}}
@@ -14,10 +15,21 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
+      #clone git repo
       - uses: actions/checkout@v2
+      
+      #login to dockerhub
       - name: Login on docker hub
         run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+      
+      #build the tagged image
       - name: Build the docker image
         run: docker build --tag $DOCKER_HUB_REPO:$GITHUB_REF_NAME .
       - name: Push to docker hub
         run: docker push $DOCKER_HUB_REPO:$GITHUB_REF_NAME
+      
+      #build latest image
+      - name: Build the docker image
+        run: docker build --tag $DOCKER_HUB_REPO:latest .
+      - name: Push to docker hub
+        run: docker push $DOCKER_HUB_REPO:latest
