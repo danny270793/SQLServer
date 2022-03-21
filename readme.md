@@ -11,9 +11,7 @@ version: "3.7"
 
 services:
   sqlserver:
-    build:
-      context: .
-      dockerfile: dockerfile
+    image: danny27071993/sqlserver
     environment:
       - DATABASE_NAME=application
       - SA_PASSWORD=@admin270793
