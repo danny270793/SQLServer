@@ -3,7 +3,6 @@
 [![Release pipeline](https://github.com/danny270793/SQLServer/actions/workflows/tag-image.yaml/badge.svg)](https://github.com/danny270793/SQLServer/actions/workflows/release.yaml)
 
 ![Docker Image Size](https://img.shields.io/docker/image-size/danny27071993/sqlserver)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/danny270793/SQLServer)
 ![GitHub repo size](https://img.shields.io/github/repo-size/danny270793/SQLServer)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/danny270793/SQLServer)
 
