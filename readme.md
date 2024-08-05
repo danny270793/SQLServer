@@ -1,6 +1,6 @@
 # SQLServer
 
-[![Release pipeline](https://github.com/danny270793/GitlabToGithubCommitHistorySync/actions/workflows/releaser.yaml/badge.svg)](https://github.com/danny270793/SQLServer/actions/workflows/release.yaml)
+[![Release pipeline](https://github.com/danny270793/SQLServer/actions/workflows/tag-image.yaml/badge.svg)](https://github.com/danny270793/SQLServer/actions/workflows/release.yaml)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/danny270793/SQLServer)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/danny270793/SQLServer/total)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/danny270793/SQLServer)
@@ -31,8 +31,7 @@ services:
 
 ## LICENSE
 
-[![GitHub License](https://img.shields.io/github/license/danny270793/GitlabToGithubCommitHistorySync)
-](license.md)
+[![GitHub License](https://img.shields.io/github/license/danny270793/SQLServer)](license.md)
 
 ## Version
 
