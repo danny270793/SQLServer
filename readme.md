@@ -1,9 +1,14 @@
 # SQLServer
 
 [![Release pipeline](https://github.com/danny270793/SQLServer/actions/workflows/tag-image.yaml/badge.svg)](https://github.com/danny270793/SQLServer/actions/workflows/release.yaml)
+
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/danny270793/SQLServer)
+![GitHub repo size](https://img.shields.io/github/repo-size/danny270793/SQLServer)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/danny270793/SQLServer)
+
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/danny270793/SQLServer)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/danny270793/SQLServer/total)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/danny270793/SQLServer)
+![Docker Pulls](https://img.shields.io/docker/pulls/danny27071993/sqlserver)
 
 Create sqlserver container with a database just passing the database name as parameter without the need of any external script
 
