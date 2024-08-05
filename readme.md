@@ -1,6 +1,11 @@
 # SQLServer
 
-Create sqlserver with a database just passing the database name as parameter
+[![Release pipeline](https://github.com/danny270793/GitlabToGithubCommitHistorySync/actions/workflows/releaser.yaml/badge.svg)](https://github.com/danny270793/SQLServer/actions/workflows/release.yaml)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/danny270793/SQLServer)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/danny270793/SQLServer/total)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/danny270793/SQLServer)
+
+Create sqlserver container with a database just passing the database name as parameter without the need of any external script
 
 ## Ussage
 
@@ -31,6 +36,6 @@ services:
 
 ## Version
 
-SQLServer version 1.1.1
+![GitHub Tag](https://img.shields.io/github/v/tag/danny270793/SQLServer)
 
 Last update 10/03/2023
